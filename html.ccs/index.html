@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <meta name="keywords" content="rootics, Robotics, robots, Robots">
+    <meta name="description" content="a breif introduction on the study of robotics">
+    <title>Robotics</title>
+    <style>
+        .introduction {
+            border: 100px;
+            font-size: 20px;
+            background-color: rgb(200, 228, 230);
+            background-size: 50px;
+            font-style: oblique;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+            border: 60px;
+            border-color: black;
+            height: 40px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 100px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            font-style: oblique;
+            margin-top: 20px;
+
+        }
+
+        .topic1 {
+            font-size: 40px;
+            font-weight: bold;
+            font-style: oblique;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 80px;
+            margin-bottom: 20PX;
+
+        }
+
+        .explanationaboutrobotics {
+            font-size: 25px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+        }
+
+        .intropicture {
+            width: 300px;
+            length: 300px;
+            float: left;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .topic2 {
+            font-size: 40px;
+            font-weight: bold;
+            font-style: oblique;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 200px;
+            margin-bottom: 20PX;
+        }
+
+        .robot {
+            font-size: 30px;
+            margin-left: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            margin-right: 10px;
+        }
+
+        .robotexplanation {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .robotics {
+            font-size: 30px;
+            margin-left: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            margin-right: 10px;
+        }
+
+        .roboticsexplanation {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .typesofrobots {
+            font-size: 40px;
+            font-weight: bold;
+            font-style: oblique;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 100px;
+            margin-bottom: 20PX;
+        }
+
+        .pictureindustrial {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            height: 300px;
+            object-fit: cover;
+
+        }
+
+        .titleindustrial {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+
+        .explanationindustrial {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .exampleindustrial {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .pictureservice {
+            width: 600px;
+            length: 50px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .titleservice {
+            font-size: 30px;
+            margin-left: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+
+        .explanationservice {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .exampleservice {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .picturemedical {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            height: 300px;
+            object-fit: cover;
+
+        }
+
+        .titlemedical {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .explanationmedical {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .examplemedical {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .pictureexploration {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .titleexploration {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .explanationexploration {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .exampleexploration {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .picturehumanoid {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .titlehumanoid {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .explanationhumanoid {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .examplehumanoid {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .pictureautonomous {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .titleautonomous {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .explanationautonomous {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .exampleautonomous {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .picturemilitary {
+            width: 600px;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .titlemilitary {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .explanationmilitary {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .examplemilitary {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .areasofstudy {
+            font-size: 50px;
+            font-weight: bold;
+            font-style: oblique;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 200px;
+            margin-bottom: 69px;
+        }
+
+        .m-engineer {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutm-engineer {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .e-engineer {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboute-engineer {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .compsci {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutcompsci {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .mathematics {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutmathematics {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .ai {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutai {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .applicationofrobotics {
+            font-size: 50px;
+            font-weight: bold;
+            font-style: oblique;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 200px;
+            margin-bottom: 69px;
+        }
+
+        .manufacturing {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutmanufacturing {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .healthcare {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .abouthealthcare {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .spaceexploration {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutspaceexploration {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+
+
+
+        .agriculture {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutagriculture {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .entertainment {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutentertainment {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+
+        .militaryanddefense {
+            font-size: 30px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-right: 10px;
+
+        }
+
+        .aboutmilitaryanddefense {
+            font-size: 20px;
+            font-weight: 100;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#section-introduction"><button class="introduction">Introduction</button></a>
+    <a href="#section-whatdoesroboticsmeans"><button class="introduction">What does Robotics means?</button></a>
+    <a href="#section-typesofrobots"><button class="introduction"> Types of Robots</button></a>
+    <a href="#section-areasofstudyinrobotics"><button class="introduction">Areas of Study in Robotics</button></a>
+    <a href="#section-applicationofrobotics"><button class="introduction">Application of Robotics</button></a>
+    <h1 id="#section-introduction" class="title">Robotics</h1>
+    <img class="intropicture" src="images/459199247_1049079580225526_5332584453649544768_n.jpg" alt="a photo of robot">
+    <h2 class="topic1">What is Robotics?</h2>
+    <p class="explanationaboutrobotics"><strong>Robotics</strong> is a vast, interdisciplinary field that integrates
+        many areas of engineering,
+        computer science, and artificial intelligence to create machines capable of performing tasks autonomously or
+        semi-autonomously. The goal of robotics is to develop robots that can assist humans, solve complex problems, or
+        operate in environments where humans cannot.
+    </p>
+    <h2 id="section-whatdoesroboticsmeans" class="topic2">What does the <em>Robotics</em> word means?</h2>
+    <h4 class="robot">• Robot</h4>
+    <p class="robotexplanation">A robot is a machine capable of carrying out a complex series of actions automatically,
+        especially one
+        programmable by a computer. Robots can be autonomous (operating without human intervention) or semi-autonomous
+        (requiring some human control).</p>
+    <h4 class="robotics">• Robotics</h4>
+    <p class="roboticsexplanation">The science and technology of robots, their design, manufacture, and application.</p>
+    <h2 id="section-typesofrobots" class="typesofrobots">Types of Robots :</h2>
+    <img class="pictureindustrial" src="images/417903408_2594934594012750_8771848172420492473_n.jpg"
+        alt="industrial robot">
+    <h4 class="titleindustrial">1. Industrial Robots</h4>
+    <p class="explanationindustrial"> Used primarily in manufacturing to perform repetitive tasks such as welding,
+        painting, and assembly.</p>
+    <p class="exampleindustrial"> <strong>Example :</strong> Robotic arms in car manufacturing plants.</p>
+    <img class="pictureservice" src="images/458465517_512076704794542_8737471710826660342_n.jpg" alt="service robot">
+    <h4 class="titleservice">2. Service Robots</h4>
+    <p class="explanationservice">Designed to assist humans by performing tasks like cleaning, delivering items, or
+        providing customer service.</p>
+    <p class="exampleservice"><strong>Example :</strong> Vacuum cleaning robots (e.g., Roomba), delivery robots in
+        hotels.</p>
+    <img class="picturemedical" src="images/378195458_1446800369439116_3247666797596815939_n.jpg" alt="medical robot">
+    <h4 class="titlemedical">3. Medical Robots</h4>
+    <p class="explanationmedical">Assist in medical procedures, surgeries, rehabilitation, and patient care.</p>
+    <p class="examplemedical"> <strong>Example :</strong> The Da Vinci Surgical System, robotic prosthetics.</p>
+    <img class="pictureexploration" src="images/458703089_429294332972427_1231161262786586126_n.jpg"
+        alt="exploration robot">
+    <h4 class="titleexploration">4. Exploration Robots</h4>
+    <p class="explanationexploration">Operate in environments that are dangerous or inaccessible to humans, such as
+        space, deep underwater, or disaster areas.</p>
+    <p class="exampleexploration"> <strong>Example :</strong> NASA's Mars rovers, underwater drones for ocean research.
+    </p>
+    <img class="picturehumanoid" src="images/429102752_713699324287270_2010228329974559247_n.jpg" alt="humanoid robot">
+    <h4 class="titlehumanoid">5. Humanoid Robots</h4>
+    <p class="explanationhumanoid">Designed to resemble and mimic human actions, often used for research, education, and
+        human-robot interaction.</p>
+    <p class="examplehumanoid"> <strong>Example :</strong> Honda ASIMO, Boston Dynamics Atlas.</p>
+    <img class="pictureautonomous" src="images/346096371_1240838070127574_8681203785467262040_n.jpg"
+        alt="autonomous robot">
+    <h4 class="titleautonomous">6. Autonomous Vehecle</h4>
+    <p class="explanationautonomous"> Self-driving cars, drones, and other vehicles that can operate without human
+        intervention.</p>
+    <p class="exampleautonomous"> <strong>Example :</strong> Tesla's Autopilot, Amazon delivery drones.
+    </p>
+    <img class="picturemilitary" src="images/458317204_1938909583280425_6373191426880165527_n.jpg" alt="military robot">
+    <h4 class="titlemilitary">7. Military Robots</h4>
+    <p class="explanationmilitary">Deployed for defense purposes, such as reconnaissance, bomb disposal, or even combat.
+    </p>
+    <p class="examplemilitary"> <strong>Example :</strong> Unmanned Aerial Vehicles (UAVs), robot tanks.
+    <h2 id="section-areasofstudyinrobotics" class="areasofstudy">Areas of Study in Robotics</h2>
+    <h4 class="m-engineer">1. Mechanical Engineering</h4>
+    <p class="aboutm-engineer">- Focuses on the design and construction of the physical structure of robots, including
+        motors, gears, and frames.
+        Involves the study of kinematics (motion) and dynamics (forces and torques) to ensure robots can move smoothly
+        and efficiently.</p>
+    <h4 class="e-engineer">2. Electrical Engineering</h4>
+    <p class="aboute-engineer">- Deals with the electronic circuits and power systems that control a robot's sensors and
+        actuators.
+        Involves creating energy-efficient systems that allow robots to operate for extended periods.</p>
+    <h4 class="compsci">3. Computer Science</h4>
+    <p class="aboutcompsci">- Focuses on software algorithms and control systems that allow robots to process
+        information, make
+        decisions, and perform tasks.
+        Involves AI, machine learning, computer vision, and robot programming.</p>
+    <h4 class="mathematics">4. Mathematics</h4>
+    <p class="aboutmathematics">- Used in everything from calculating the motion of robot arms (inverse kinematics) to
+        developing algorithms for decision-making and sensor fusion.</p>
+    <h4 class="ai">5. Artificial Intelligence (AI)</h4>
+    <p class="aboutai">- Plays a key role in developing robots that can think and act autonomously.
+        AI allows robots to recognize patterns, solve problems, and learn from experience, making them more adaptable to
+        changing environments.</p>
+    <h2 id="section-applicationofrobotics" class="applicationofrobotics">Applications of Robotics</h2>
+    <h4 class="manufacturing">1. Manufacturing</h4>
+    <p class="aboutmanufacturing">- Robots are widely used in factories for tasks such as assembly, welding, and
+        painting. They increase efficiency and precision while reducing human labor costs.</p>
+    <h4 class="healthcare">2. Healthcare</h4>
+    <p class="abouthealthcare">- Robots assist in surgeries, diagnostics, rehabilitation, and even elderly care.
+        Surgical robots improve precision, while rehabilitation robots aid in physical therapy.</p>
+    <h4 class="spaceexploration">3. Space Exploration</h>
+        <p class="aboutspaceexploration">- Robots play a crucial role in space missions, conducting experiments,
+            gathering data, and exploring planets. NASA rovers on Mars are prime examples.</p>
+        <h4 class="agriculture">4. Agriculture</h4>
+        <p class="aboutagriculture">- Robots assist in tasks like planting, harvesting, and monitoring crops. Autonomous
+            tractors and drones help farmers increase productivity.</p>
+        <h4 class="entertainment">5. Entertainment</h4>
+        <p class="aboutentertainment">- Robotics is increasingly used in interactive toys, theme park attractions, and
+            cinematic effects. Animatronics bring characters to life in movies and theme parks.</p>
+        <h4 class="militaryanddefense">6. Military and Defense</h4>
+        <p class="aboutmilitaryanddefense">Military robots perform tasks such as bomb disposal, surveillance, and even
+            combat. Unmanned drones are used for reconnaissance and tactical strikes.</p>
+</body>
+
+
+
+
+</html>
